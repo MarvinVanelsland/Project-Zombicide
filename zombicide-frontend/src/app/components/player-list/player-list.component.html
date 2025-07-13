@@ -1,0 +1,34 @@
+<div class="player-cards" *ngIf="players.length > 0;">
+  <div class="player-card" *ngFor="let player of players" (click)="toggleFlip(player)">
+    <div class="card-inner" [class.flipped]="player.isFlipped">
+
+      <!-- Recto -->
+      <div class="card-front">
+        <header>
+          <div class="left">
+            <div id="name">{{ player.name }}</div>
+          </div>
+          <div class="right">
+            <div id="health">PV:</div>
+            <img *ngFor="let i of [].constructor(player.health)" class="icon" src="./assets/icon/coeurs.png" />
+          </div>
+        </header>
+        <div class="card-body">
+          <div class="image-container">
+            <img [src]="getAvatarForRole(player.role)" class="player-avatar" />
+          </div>
+          <div class="description">
+            <p>Rôle : {{ player.role }}</p>
+            <p>Actions restantes : {{ player.actionsRemaining }}</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Verso -->
+      <div class="card-back">
+        <<h3>Inventaire de {{ player.name }}</h3>>
+      </div>
+
+    </div>
+  </div>
+</div>
