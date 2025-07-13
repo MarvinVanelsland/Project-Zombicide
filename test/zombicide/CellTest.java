@@ -3,7 +3,6 @@ package zombicide;
 import zombicide.boards.TrainingBoard;
 import zombicide.cells.*;
 import org.junit.jupiter.api.*;
-import static org.junit.jupiter.api.Assertions.*;
 
 public class CellTest{
 

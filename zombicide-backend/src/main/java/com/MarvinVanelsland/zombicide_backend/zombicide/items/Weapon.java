@@ -24,7 +24,7 @@ public abstract class Weapon extends Item {
 	
 	/** 
 	 * ask the player where he wants to attack and lauch the attack 
-	 * @param target the target 
+	 * @param target the target
 	 * */
 	public void use(Player target) {
 		

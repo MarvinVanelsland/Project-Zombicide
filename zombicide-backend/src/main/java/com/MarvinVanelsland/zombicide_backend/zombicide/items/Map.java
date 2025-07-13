@@ -18,7 +18,7 @@ public class Map extends Item {
 	
 	/** 
 	 * show the board 
-	 * @param target the target 
+	 * @param target the target
 	 * */
 	public void use(Player target) {
 		this.board.display();

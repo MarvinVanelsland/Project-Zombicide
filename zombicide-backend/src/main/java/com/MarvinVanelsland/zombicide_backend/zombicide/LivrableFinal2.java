@@ -1,4 +1,4 @@
-package zombicide;
+package com.MarvinVanelsland.zombicide_backend.zombicide;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;

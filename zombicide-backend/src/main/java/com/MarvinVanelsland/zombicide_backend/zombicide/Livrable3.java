@@ -1,4 +1,4 @@
-package zombicide;
+package com.MarvinVanelsland.zombicide_backend.zombicide;
 
 import java.util.ArrayList;
 import java.util.List;
