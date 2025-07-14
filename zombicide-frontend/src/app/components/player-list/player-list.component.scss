@@ -2,15 +2,19 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.5rem;
-  padding: 2rem;
-  cursor: pointer;
+  gap: 0.2rem;
+  padding: 1rem;
 
-  .player-card {
-    width: 240px;
-    height: 360px;
-    perspective: 1000px;
-  }
+
+.player-card {
+  width: 100%;
+  max-width: 240px;
+  min-height: 400px;
+  cursor: pointer;
+  perspective: 1000px;
+  position: relative;
+}
+
 
   .card-inner {
     width: 100%;
@@ -37,6 +41,7 @@
     background: #2e2e2e;
     color: #f1f1f1;
     padding: 1rem;
+    box-sizing: border-box;
   }
 
   .card-back {
@@ -126,3 +131,44 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .player-cards {
+    gap: 1rem;
+    padding: 1rem;
+
+    .player-card {
+      width: 90vw;
+      height: auto;
+    }
+
+    .image-container {
+      width: 90%;
+      height: 200px;
+    }
+
+    .description {
+      padding: 0.6rem;
+      font-size: 0.85rem;
+    }
+
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+
+      #name {
+        font-size: 1.1rem;
+      }
+
+      .icon {
+        width: 16px;
+        height: 16px;
+      }
+
+      #health {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
