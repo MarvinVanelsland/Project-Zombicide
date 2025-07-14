@@ -1,0 +1,27 @@
+<body>
+  <div class="prepare-container">
+    <h2>Prépare ta partie</h2>
+
+    <form>
+
+      <!-- Choix du plateau -->
+      <label for="board">Choisis ton plateau :</label>
+      <select id="board"  name="board" required>
+        <option *ngFor="let board of boards" [value]="board">{{ board }}</option>
+      </select>
+
+      <!-- Taille du plateau -->
+      <label for="size">Taille du plateau :</label>
+      <select id="size" name="size" required>
+        <option *ngFor="let size of sizes" [value]="size">{{ size }}</option>
+      </select>
+
+      <!-- Nombre de joueurs -->
+      <label for="players">Nombre de joueurs :</label>
+      <input type="number" id="players" name="players"  min="1" max="6" required />
+
+      <!-- Bouton démarrer -->
+      <button type="submit" >Démarrer la partie</button>
+    </form>
+  </div>
+</body>

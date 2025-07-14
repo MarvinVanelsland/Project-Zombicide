@@ -1,0 +1,57 @@
+
+body {
+  min-height: 100vh;
+  background-image: url("/assets/background/select-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+.prepare-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+
+select, input {
+  width: 100%;
+  padding: 0.4rem;
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+button {
+  width: 100%;
+  background-color: #ff4d4d;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:disabled {
+  background-color: #7a1a1a;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #e60000;
+}

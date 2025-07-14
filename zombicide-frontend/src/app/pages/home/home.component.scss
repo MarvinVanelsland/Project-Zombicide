@@ -1,0 +1,94 @@
+/* Style global */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #0d0d0d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+  position: relative;
+}
+
+/* ✅ Image de sang qui coule */
+.container {
+  position: relative;
+  z-index: 2;
+  background-color: #1a1a1a;
+  border-radius: 1rem;
+  padding: 2rem 2rem 1.5rem;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+/* ✅ Nouvelle position fluide pour le sang */
+.top-blood {
+  width: 100%;
+  max-width: 600px;
+  margin-top: -50px; /* remonte l’image au-dessus du conteneur */
+  margin-bottom: -50px; /* évite de laisser un espace sous l’image */
+  pointer-events: none;
+  user-select: none;
+  display: block;
+  transform: translateY(-10px);
+}
+
+/* ✅ Titre */
+.container h1 {
+  font-size: 2rem;
+  color: #ff4d4d;
+  margin-bottom: 1rem;
+}
+
+/* ✅ Description */
+.description {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+/* ✅ Mains sanglantes */
+.images-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.hand {
+  position: absolute;
+  width: 60px;
+  height: auto;
+}
+
+.left-hand {
+  transform: rotate(-50deg);
+}
+
+.right-hand {
+  bottom: 5%;
+  right: 5%;
+  transform: rotate(20deg);
+}
+
+/* ✅ Bouton démarrer */
+.start-btn {
+  padding: 0.8rem 1.5rem;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.start-btn:hover {
+  background-color: #e60000;
+}
